@@ -8,7 +8,7 @@ export const rejectedReducer = (state, { payload }) => {
   state.error = payload;
 };
 
-export const fulfilledReducer = (state, { payload }) => {
+export const fulfilledReducer = state => {
   state.isLoading = false;
   state.error = null;
 };
